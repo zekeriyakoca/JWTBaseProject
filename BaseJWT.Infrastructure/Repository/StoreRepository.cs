@@ -13,12 +13,12 @@ using Microsoft.Extensions.Logging;
 
 namespace BaseJWT.Infrastructure.Repository
 {
-  public class DutchRepository : IStoreRepository
+  public class StoreRepository : IStoreRepository
   {
     private readonly DataContext _ctx;
-    private readonly ILogger<DutchRepository> _logger;
+    private readonly ILogger<StoreRepository> _logger;
 
-    public DutchRepository(DataContext ctx, ILogger<DutchRepository> logger)
+    public StoreRepository(DataContext ctx, ILogger<StoreRepository> logger)
     {
       _ctx = ctx;
       _logger = logger;
